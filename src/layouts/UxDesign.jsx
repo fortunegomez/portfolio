@@ -9,11 +9,13 @@ function UxDesign() {
       {cardDetails.map((card) => {
         return (
           <Card key={card.title} btnText="VIEW CASE STUDY">
-            <img
-              src={card.image}
-              alt=""
-              className="rounded-tl-[16px] rounded-tr-[16px] cursor-pointer max-h-[160px] md:max-h-max w-full object-cover"
-            />
+            <div>
+              <img
+                src={card.image}
+                alt=""
+                className="rounded-tl-[16px] rounded-tr-[16px] cursor-pointer max-h-[160px] md:max-h-max w-full object-cover"
+              />
+            </div>
             <div className="p-3">
               <h1 className="text-[#F0F6FA] text-[20px] lg:text-[26px] font-normal">
                 {card.title}
